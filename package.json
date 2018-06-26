@@ -1,0 +1,39 @@
+{
+  "name": "gaochao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node --harmony ./Home/server.js",
+    "gulp": "gulp",
+    "start": "npm run dev && npm run gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocky216/gaochao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rocky216/gaochao/issues"
+  },
+  "homepage": "https://github.com/rocky216/gaochao#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "log4js": "^2.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nodemon": "^2.2.1"
+  }
+}
