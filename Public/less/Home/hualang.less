@@ -1,0 +1,391 @@
+@topColor:          #252c34;
+@headerColor:       #495a80;
+
+body , ul, li,input,p{
+  margin: 0;
+  padding:0;
+  list-style: none;
+}
+a{text-decoration: none; color: #333;}
+
+
+
+
+.topwrap {
+  width: 100%;
+  height: 55px;
+  background: @topColor;
+  .top{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    .tubiao {
+      float: left;
+      width: 82px;
+      margin-top: 20px;
+    }
+    ul {
+      float: left;
+      margin-top: 18px;
+      margin-left: 50px;
+      li  {
+        float: left;
+        margin:  0 10px;
+        a {
+          color: #ccc;
+          font-size: 16px;
+          padding:3px 10px;
+        }
+        a.active {
+          background-color: #8091b5;
+        }
+      }
+    }
+    .sandian {
+      float: left;
+      padding: 16px;
+      margin-left: 0px;
+      cursor: pointer;
+    }
+    .login {
+      float: right;
+      margin-top: 16px;
+      a {
+        padding: 10px;
+        color: #ccc;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.headerWrap {
+  width: 100%;
+  height: 120px;
+  background-color: #495a80;
+  .header {
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+    .login {
+      padding-top: 40px;
+      float: left;
+    }
+    .search {
+      float: left;
+      width: 440px;
+      height: 42px;
+      background-color: #fff;
+      border-radius: 25px;
+      margin-top: 40px;
+      margin-left: 50px;
+      overflow: hidden;
+      position: relative;
+      input {
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+        border: none;
+      }
+      .icon {
+        width: 75px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        img {
+          display: block;
+          margin: auto;
+          margin-top: 12px;
+        }
+      }
+      .types {
+        width: 73px;
+        height: 100%;
+        border-right: 1px solid #dbe0e2;
+        border-left: 1px solid #dbe0e2;
+        position: absolute;
+        right: 70px;
+        top:0;
+        span {
+          float: left;
+          margin-top: 12px;
+          margin-left: 10px;
+          font-size: 14px;
+          color: #999;
+        }
+        i {
+          float: left;
+          width: 13px;
+          height: 9px;
+          background: url("/images/daosanjiao.png") no-repeat;
+          margin-top: 17px;
+          margin-left: 8px;
+        }
+      }
+    }
+    .telphone {
+      float: left;
+      margin-top:44px;
+      margin-left: 40px;
+    }
+    .tuihuo {
+      float: left;
+      margin-top:44px;
+      margin-left: 40px;
+    }
+    .shopcart {
+      float: left;
+      margin-left: 30px;
+      margin-top: 38px;
+      position: relative;
+      span {
+        position: absolute;
+        background: #ed5348;
+        top:6px;
+        left:38px;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 50%;
+        display: block;
+        width: 13px;
+        height: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.screen {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  .daoxiang {
+    float: right;
+    margin-top:10px;
+  }
+  ul{
+    margin: auto;
+    width: 1200px;
+    li {
+      float: left;
+      font-size: 14px;
+      color: #666;
+      margin-right: 20px;
+      padding: 20px 0 10px 0;
+      i{
+        float: left;
+        width: 8px;
+        height: 11px;
+        background: url("/images/jiantou.png") no-repeat;
+        margin-top: 4px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.works {
+  width: 1200px;
+  margin: auto;
+  ul{
+    overflow: hidden;
+    li {
+      float:left;
+      margin-top: 20px;
+      .works_item1 {
+        float: left;
+        .works_item_shop {
+          float: left;
+          .works_item_img {
+            float: left;
+            padding-top: 20px;
+            img {
+              border-radius: 50%;
+            }
+            .text {
+              font-size: 14px;
+              i {
+                float: left;
+                width: 10px;
+                height: 13px;
+                margin-top: 5px;
+                margin-right: 10px;
+                background: url("/images/pos.png") no-repeat;
+              }
+            }
+          }
+          .works_item_text {
+            float: left;
+            width: 265px;
+            margin-left: 20px;
+            h2 {
+              font-size: 16px;
+              margin: 0 0 10px;
+            }
+            .describe {
+              font-size: 14px;
+              color: #999;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
+            }
+            .icon {
+              overflow: hidden;
+              padding: 10px 0;
+              i {
+                float: left;
+                width: 28px;
+                height: 28px;
+              }
+              i.icon_1 {
+                background: url("/images/qiye.png") no-repeat;
+              }
+              i.icon_2 {
+                background: url("/images/xin.png") no-repeat;
+              }
+              i.icon_3 {
+                background: url("/images/gang.png") no-repeat;
+              }
+            }
+            .icon_text {
+              float: left;
+              font-size: 12px;
+              margin-top: -5px;
+              color: #999;
+            }
+            .info {
+              font-size: 12px;
+              color: #666;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+      .works_item2 {
+        width: 770px;
+        margin-left: 40px;
+        float: left;
+        ul {
+          overflow: hidden;
+          float: left;
+          li{
+            width: 223px;
+            height: 170px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.works_screen {
+  width: 100%;
+  ul {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+    margin-left: 300px;
+    li {
+      i {
+        background: url("/images/daosanjiao.png") no-repeat;
+        width: 16px;
+        float: right;
+        margin-top: 5px;
+      }
+    }
+  }
+  .special {
+    float: left;
+    background: #f36a6a;
+    color: #fff;
+    padding:5px 10px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+.two_screen {
+  width: 1200px;
+  height: 60px;
+  background-color: #e8e6e4;
+  margin: auto;
+  img {
+    float: left;
+    margin-top:20px;
+    margin-left: 10px;
+  }
+  .maodian {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    i {
+      width: 10px;
+      height: 16px;
+      margin: 5px 3px 0 2px;
+      float: left;
+      background: url("/images/maodian.png") no-repeat;
+    }
+    span {
+      float: left;
+    }
+  }
+  .condition {
+    float: right;
+    .condition_item.active {
+      color: #333;
+      i {
+        background: url("/images/condition.png") no-repeat;
+      }
+    }
+    .condition_item {
+      float: left;
+      padding: 5px 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      margin-top: 10px;
+      margin-right: 10px;
+      color: #999;
+      i {
+        float: right;
+        width: 13px;
+        height: 16px;
+        margin-top: 4px;
+        background: url("/images/condition_01.png") no-repeat;
+      }
+    }
+  }
+}
+.shopList {
+  width: 1200px;
+  margin: 20px auto;
+  ul {
+    width: 100%;
+    li {
+      width: 20%;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box;
+      .text {
+        padding-left: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-top:2px;
+          margin-right: 5px;
+          float: left;
+          border-radius:20px;
+
+        }
+      }
+    }
+  }
+}

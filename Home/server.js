@@ -11,9 +11,8 @@ app.use(express.static('Public'));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname + '/views'))
 
-require("./routers")(app) 
+require("./routers")(app)
 
-console.log(21212)
 
 app.listen(process.env.PORT, (error)=>{
   if (!error) console.log(`localhost:${process.env.PORT}`);
